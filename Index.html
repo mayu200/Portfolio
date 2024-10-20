@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayuri Khatpe | Data Professional</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f4; /* Light gray background for the page */
+            color: #333; /* Dark text color for readability */
+        }
+
+        header {
+    background-color: #0b0b0b; /* Dark background for header */
+    color: white; /* White text for contrast */
+    padding: 20px 0 0; /* Padding only on top, no bottom padding */
+    border-bottom: 2px solid black; /* Black outline for header */
+}
+
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav-links li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            border-bottom: 2px solid transparent; /* Add bottom border for hover effect */
+        }
+
+        .nav-links li a:hover {
+            color: #ffd700; /* Gold color on hover */
+            border-bottom: 2px solid #ffd700; /* Gold border on hover */
+        }
+
+        .hero {
+            background: url('images/Background.jpg') no-repeat center/cover;
+            text-align: center;
+            padding: 150px 20px;
+            color: rgb(237, 229, 229);
+            position: relative; /* Position relative for absolute elements */
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Black overlay */
+            z-index: 1; /* Overlay above background */
+        }
+
+        .hero-content {
+            position: relative; /* Position relative to stack above the overlay */
+            z-index: 2; /* Ensure hero content is above overlay */
+        }
+        #about {
+    margin-top: 40px; /* Adjust the value as needed */
+}
+
+        .hero-content h2 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .section {
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            border: 2px solid black; /* Black outline for sections */
+        }
+
+        h2 {
+            text-align: center;
+            color:#ffd505; /* Dark text color for section headings */
+            margin-bottom: 20px;
+        }
+
+        .about-img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+            border: 2px solid black; /* Black outline for images */
+        }
+
+        .skills-grid, .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-item, .project-item {
+            background: #f4f4f4; /* Light gray background for items */
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            border: 2px solid black; /* Black outline for skill and project items */
+        }
+
+        .skill-item:hover, .project-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .skill-img, .project-img {
+            max-width: 80%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: #333; /* Dark footer background */
+            color: white; /* White footer text */
+            text-align: center;
+            padding: 20px 0;
+            border-top: 2px solid black; /* Black outline for footer */
+        }
+
+        footer a {
+            color: #ffd700; /* Gold color for footer links */
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Mayuri Khatpe</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#blog">Daily Activities</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Data Scientist | Machine Learning Expert | Data Analyst</h2>
+                <p>Transforming data into actionable insights</p>
+                <a href="#projects" class="cta" style="color: #ffd700; text-decoration: none; font-weight: bold;">Explore My Work</a>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>I am a Data Professional passionate about turning complex data into strategic solutions. With expertise in machine learning and data analysis, I deliver insights that drive decisions and innovation.</p>
+            <img src="images/Photo.jpeg" alt="Mayuri Khatpe" class="about-img">
+            <p><b>B.Tech - Data Science</b></p>
+            <p><b>Usha Mittal Institute Of Technology</b></p>
+        </section>
+
+        <section id="skills" class="section bg-light">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item left">
+                    <img src="https://images.pexels.com/photos/943096/pexels-photo-943096.jpeg?cs=srgb&dl=pexels-danny-meneses-340146-943096.jpg&fm=jpg" alt="Coding" class="skill-img">                          
+                    <h3>Programming</h3>
+                    <p>Python, SQL, JavaScript</p>
+                </div>
+                <div class="skill-item right">
+                    <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/Data_Visualization.jpg" alt="Data Visualization" class="skill-img">
+                    <h3>Data Visualization</h3>
+                    <p>Power BI, Tableau, Matplotlib</p>
+                </div>
+                <div class="skill-item left">
+                    <img src="https://emeritus.org/in/wp-content/uploads/sites/3/2023/03/types-of-machine-learning.jpg.optimal.jpg" alt="Machine Learning" class="skill-img">
+                    <h3>Machine Learning</h3>
+                    <p>scikit-learn, TensorFlow, Keras</p>
+                </div>
+                <div class="skill-item right">
+                    <img src="https://assets.datamation.com/uploads/2023/06/dm-top-database-challenges.png" alt="Database" class="skill-img">
+                    <h3>Database</h3>
+                    <p>MySQL, MongoDB</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-item left">
+                    <img src="https://repository-images.githubusercontent.com/400172588/07ba370e-616d-4e34-8931-8f42adbbb856" alt="AI Project" class="project-img">
+                    <h3>AI Voice Desktop Assistant</h3>
+                    <p>Developed an AI desktop assistant using NLP and machine learning to automate tasks and respond to voice commands.</p>
+                    <a href="https://drive.google.com/drive/folders/1-CtTk6gQRnvlP38fHNymfJlL6s6TfM2a" target="_blank">View Project</a>
+                </div>
+                <div class="project-item right">
+                    <img src="https://user-images.githubusercontent.com/86877457/132905471-3ef27af4-ecc6-44bf-a47c-5ccf2250410c.jpg" alt="Movie Recommendation System" class="project-img">
+                    <h3>Movie Recommendation System</h3>
+                    <p>Built a recommendation system using content-based filtering with Python libraries.</p>
+                    <a href="https://github.com/mayu200/Movie-Recommanation-System" target="_blank">View Project</a>
+                </div>
+                <div class="project-item left">
+                    <img src="https://user-images.githubusercontent.com/24632348/282266858-73c6c3bf-9e52-446e-aca2-38b81e957c52.png" alt="Bank Loan Analysis" class="project-img">
+                    <h3>Bank Loan Analysis</h3>
+                    <p>Created a loan analysis dashboard using Power BI and SQL for insights.</p>
+                    <a href="https://github.com/mayu200/Bank-Loan-Analysis-Dashboard-Power-BI" target="_blank">View Project</a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="experience" class="section">
+            <h2>Experience</h2>
+            <p>Internships and professional experience related to data science and analytics.</p>
+            <p><strong>Web Developer Intern at Branding Catalyst Pvt Ltd</strong> - Assisted in developing web applications using HTML , CSS and js.</p>
+            <p><strong>Data Science Intern at LetsGrowMore</strong> - Developed machine learning models and data visualization tools.</p>
+            <p><strong>Data Analytics Intern at TechnoHacks EduTech</strong> - Analyzed data and provided insights to enhance decision-making processes.</p>
+        </section>
+        
+
+
+        <section id="blog" class="section">
+            <h2>Daily Activities</h2>
+            <p>Engaging in continuous learning and professional development in the field of data science. Currently, I am:</p>
+            <p>- Participating in online coding challenges on <a href="https://www.hackerrank.com/profile/mayuridkhatpe931" target="_blank">HackerRank</a> to enhance my programming skills.</p>
+            <p>- Attending webinars to stay updated on the latest trends and advancements in data science and AI.</p>
+            <p>- Working on personal projects to deepen my understanding of machine learning algorithms and their applications.</p>
+            <p>- Learning new skills daily to broaden my expertise and adaptability in the ever-evolving tech landscape.</p>
+            <p>Feel free to explore my work on <a href="https://github.com/mayu200" target="_blank">GitHub</a> for more insights into my projects and skills.</p>
+        </section>
+        
+        
+
+        <section id="education" class="section">
+            <h2>Education</h2>
+            <p>B.Tech in Data Science from Usha Mittal Institute of Technology, 2024</p>
+            <p>Diploma in Computer Technology from Shivajirao S Jondhale Polytechnic, 2021</p>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out via email at mayuri.khatpe@example.com</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/mayuri-khatpe/" target="_blank">linkedin.com/in/mayuri-khatpe</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mayuri Khatpe. All Rights Reserved.</p>
+        <p><a href="mailto:mayuri.khatpe@example.com">Email Me</a></p>
+    </footer>
+</body>
+</html>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const sections = document.querySelectorAll('.section');
+        const options = {
+            root: null,
+            threshold: 0.1 // Trigger when 10% of the section is visible
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    const img = entry.target.querySelector('.about-img');
+                    if (img) img.style.opacity = 1; // Fade in image
+                    observer.unobserve(entry.target); // Stop observing once animated
+                }
+            });
+        }, options);
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    });
+</script>
