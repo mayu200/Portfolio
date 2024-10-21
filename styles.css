@@ -1,0 +1,455 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; /* Set the height of html and body to 100% */
+}
+
+body {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack child elements vertically */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Header Styles */
+header {
+    background: #333;
+    color: #fff;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff0; /* Change color on hover */
+}
+
+/* Hero Section Styles */
+.hero {
+    padding: 150px 20px;
+    background: linear-gradient(to bottom right, #2c3e50, #a0d1f2, #1abc9c);
+    background-size: cover; /* Ensure the image covers the entire section */
+    color: #1e1d1d; /* Set text color to white for better visibility */
+    flex: 1; /* Allow this section to grow and fill available space */
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack elements in the hero section */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Optional: add text shadow for better readability */
+}
+
+.hero-title {
+    font-size: 2.5em;
+    animation: slideIn 1s ease-out; /* Animation for the hero title */
+}
+
+/* Profile Photo Styles */
+/* Main Styles */
+main {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    padding: 20px; /* Padding around the main content */
+}
+/* About Section Styles */
+/* About Section Styles */
+.about {
+    padding: 40px; /* More padding for a spacious look */
+    background-color: #fff; /* White background for contrast */
+    margin: 20px auto; /* Center the section with auto margin on left and right */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    text-align: center; /* Center align text and elements */
+    max-width: 600px; /* Limit the width for better readability */
+    animation: slideIn 0.5s ease-in; /* Animation for the about section */
+    
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    height: calc(112vh - 120px); /* Adjust height to center within the viewport */
+}
+
+/* Center the profile photo */
+.profile-photo {
+    width: 150px; /* Set the width for your photo */
+    height: auto;
+    border-radius: 50%; /* Makes the image circular */
+    margin: 20px auto; /* Center the photo horizontally with auto margin */
+    display: block; /* Ensure it behaves as a block element for centering */
+    animation: fadeIn 1s ease-in; /* Animation for the photo */
+}
+
+
+/* Animated Title Styles */
+.animated-title {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    animation: slideIn 1s ease-out; /* Animation for the title */
+}
+
+.education {
+    font-size: 1.2em;
+    margin: 10px 0;
+    animation: fadeIn 1.5s ease-in; /* Animation for the education */
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* About Section Styles */
+.about {
+    padding: 20px;
+    background-color: #fff; /* White background for contrast */
+    margin: 20px; /* Margin around the about section */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: left; /* Align text to the left for readability */
+}
+
+.about h2 {
+    font-size: 2em; /* Heading size */
+    margin-bottom: 10px; /* Space below heading */
+}
+
+.about p {
+    font-size: 1em; /* Font size for the paragraph */
+    color: #333; /* Darker text color for readability */
+}
+
+/* CTA Button Styles */
+.cta-button {
+    background: #ff0;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: #e6e600; /* Darker yellow on hover */
+}
+
+/* Footer Styles */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Header Styles */
+.header {
+    background: linear-gradient(to bottom right, #2c3e50, #a0d1f2, #1abc9c);
+
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh; /* Make header cover the entire viewport height */
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
+
+.header-title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Navigation Styles */
+nav {
+    position: absolute; /* Place the nav inside the header and prevent overlapping */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background to match the header */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px 0; /* Add padding for better spacing */
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    border: 1px solid transparent;
+    transition: border-color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    border-color: white;
+}
+
+
+/* Projects Section */
+.projects-section {
+    padding: 40px 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0 40px;
+}
+
+.project-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+    position: relative;
+    animation: fadeInUp 0.5s ease-out;
+}
+
+.project-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+    border: 2px solid transparent;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.project-link:hover {
+    background-color: #3498db;
+    color: white;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    margin-top: 30px;
+}
+/* Header Styles */
+.header {
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh;
+    color: rgb(28, 28, 28);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
+
+.header-title h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.header-title p {
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Navigation Styles */
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    border: 1px solid transparent;
+    transition: border-color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    border-color: white;
+}
+
+/* Blog Section Styles */
+.blog-section {
+    padding: 50px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.blog-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.blog-post {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 350px;
+    transition: transform 0.3s;
+}
+
+.blog-post:hover {
+    transform: scale(1.05);
+}
+
+.blog-post img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.blog-content {
+    padding: 20px;
+}
+
+.blog-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.blog-content p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.read-more {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.read-more:hover {
+    color: #0056b3;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 50px;
+}
